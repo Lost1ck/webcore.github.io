@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "TT Lakes";
-    src: url(../assets/fonts/TTLakes/TTLakesCondensed-Light.ttf);
+    font-family: "TT Lakes Bold";
+    src: url(../assets/fonts/TTLakes/TTLakes-Black.ttf);
 }
 
 @font-face {
-    font-family: "TT Lakes Bold";
-    src: url(../assets/fonts/TTLakes/TTLakes-Black.ttf);
+    font-family: "TT Lakes regular";
+    src: url(../assets/fonts/TTLakes/TTLakesCondensed-Regular.ttf);
 }
 
 :root {
@@ -17,14 +17,14 @@
     --main_items: #1B1C21;
     --second-text: #7E7E82;
     --second-line: #41F6D7;
-    --actions__divided: #EAEAEA
+    --actions__divided: #EAEAEA;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "TT Lakes";
+    font-family: "TT Lakes regular";
     user-select: none;
     outline: none;
 }
@@ -35,6 +35,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+p,span, a {
+    font-family: "TT Lakes regular";
 }
 
 a:visited {
@@ -238,6 +242,18 @@ h1 {
 
 @media screen and (max-width: 320px) {
 
+    .actions_divided {
+        display: block;
+    }
+
+    .actions_divided .divided--inner:after {
+        top: 5px;
+    }    
+
+    .nav--flex + .actions_divided {
+        display: none;
+    }
+
     .nav--flex {
         display: block;
         padding: 10px;
@@ -250,7 +266,6 @@ h1 {
     .actions-logo > img {
         width: 97;
     }
-    
 
     .container {
         margin: 0;
@@ -259,16 +274,18 @@ h1 {
     }
 
     .header {
-        padding-top: 10px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
         width: 320px;
         height: 88px;
         background-color: var(--carousel-background);
+        border-bottom: 0.5px solid var(--second-line);
     }
 
     .header--flex {
-        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: inherit;
     }
 
     .menu_text {
@@ -281,10 +298,6 @@ h1 {
         background-color: var(--second-line);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-
-    .actions-block {
-        justify-content: space-around;
     }
 
     .actions_img > a {
@@ -322,21 +335,21 @@ h1 {
         height: 176px;
     }
 
-    .actions_divided {
-        display: block;
-    }
-
     .menu {
         margin-top: 0px;
-    }    
+    }
     
 
   }
   
   @media screen and (min-width: 321px) and (max-width: 1119px) {
+    
+    .actions_divided .divided--inner:after {
+        top: 5px;
+    }
 
-    @viewport {
-        width: 768px; 
+    .nav--flex + .actions_divided {
+        top: 10px;
     }
 
     .menu {
@@ -434,11 +447,4 @@ h1 {
         display: block;
     }
     
-  }
-  
-
-  @media screen and (max-width: 1025px) {
-
-
-
   }
