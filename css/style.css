@@ -160,7 +160,7 @@ h1 {
 }
 
 .carousel_item:hover {
-    border: 2px solid var(--carousel-text);
+    outline: 2px solid var(--carousel-text);
     background-color: var(--carousel-background);
 }
 
@@ -342,7 +342,7 @@ h1 {
 
   }
   
-  @media screen and (min-width: 321px) and (max-width: 1119px) {
+  @media screen and (min-width: 321px) and (max-width: 768px) {
     
     .actions_divided .divided--inner:after {
         top: 5px;
