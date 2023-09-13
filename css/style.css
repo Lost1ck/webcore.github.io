@@ -1,11 +1,21 @@
 @font-face {
-    font-family: "TT Lakes Bold";
-    src: url(../assets/fonts/TTLakes/TTLakes-Black.ttf);
+    font-family: "TT Lakes-demi";
+    src: url(../assets/fonts/TTLakes/TTLakes-DemiBold.woff);
 }
 
 @font-face {
-    font-family: "TT Lakes regular";
-    src: url(../assets/fonts/TTLakes/TTLakesCondensed-Regular.ttf);
+    font-family: "TT Lakes-light";
+    src: url(../assets/fonts/TTLakes/TTLakes-Light.woff);
+}
+
+@font-face {
+    font-family: "TT Lakes-medium";
+    src: url(../assets/fonts/TTLakes/TTLakes-Medium.woff);
+}
+
+@font-face {
+    font-family: "TT Lakes-regular";
+    src: url(../assets/fonts/TTLakes/TTLakes-Regular.woff);
 }
 
 :root {
@@ -24,7 +34,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "TT Lakes regular";
     user-select: none;
     outline: none;
 }
@@ -37,8 +46,31 @@ a {
     text-decoration: none;
 }
 
-p,span, a {
-    font-family: "TT Lakes regular";
+.actions_img a {
+    font-family: "TT Lakes-regular", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.menu_text h1 {
+    font-family: "TT Lakes-demi";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+
+.carousel a {
+    font-family: "TT Lakes-light", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 a:visited {
@@ -74,11 +106,12 @@ a:visited {
 }
 
 h1 {
-    font-family: "TT Lakes Bold";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .container {
-    /* margin: 100px; */
     background-color: var(--main-background);
     padding: 20px;
     width: 1120px;
@@ -86,7 +119,6 @@ h1 {
 }
 
 .menu_text {
-    margin-top: -45px;
     align-items: center;
     position: relative;
 }
@@ -101,6 +133,15 @@ h1 {
     background-color: var(--carousel-text);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.main_items > p {
+    font-family: "TT Lakes-light", sans-serif;
+    color: var(--main_items);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-right: 20px;
 }
 
 .main_h1 h1 { 
@@ -132,6 +173,7 @@ h1 {
 }
 
 .actions_img a {
+    font-weight: 700;
     margin-right: 10px;
     font-size: 16px;
     color: var(--main_items);
@@ -159,6 +201,14 @@ h1 {
     align-items: center;
 }
 
+.carousel a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
 .carousel_item:hover {
     outline: 2px solid var(--carousel-text);
     background-color: var(--carousel-background);
@@ -179,16 +229,10 @@ h1 {
     height: 307px;
 }
 
-.main_items {
-    margin-right: 20px;
+.main_img img {
+    background: lightgray 0px 0px / 100% 100% no-repeat;
 }
 
-.main_items > p {
-    color: var(--main_items);
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-}
 .main_items > p:nth-child(2) {
     margin-top: 10px;
 }
@@ -232,11 +276,19 @@ h1 {
 }
 
 .text_readmore {
+    color: var(--main_items);
     margin-left: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 .text_read {
     margin-top: 10px;
+    align-items: center;
+    font-family: "TT Lakes-medium",sans-serif;
 }
 
 
