@@ -81,13 +81,13 @@ h1 {
     height: 535px;
 }
 
-.main_text {
+.menu_text {
     margin-top: -45px;
     align-items: center;
     position: relative;
 }
 
-.main_text > h1::after {
+.menu_text > h1::after {
     position: absolute;
     content: '';
     top: 0;
@@ -284,12 +284,12 @@ h1 {
         padding-right: 20px;
     }
 
-    .main_text {
+    .menu_text {
         margin: 10px 20px;
         margin-right: 0;
     }
 
-    .main_text > h1::after {
+    .menu_text > h1::after {
         background-color: var(--second-line);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -373,13 +373,13 @@ h1 {
         padding-right: 0;
     }
 
-    .main_text {
+    .menu_text {
         margin: 0 20px;
         margin-right: 0;
         margin-top: 20px;
     }
 
-    .main_text > h1::after {
+    .menu_text > h1::after {
         background-color: var(--second-line);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
