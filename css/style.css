@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TT Lakes";
-    src: url(../fonts/TTLakes/TTLakesCondensed-ExtraBoldItalic.eot);
+    src: url(../assets/fonts/TTLakes/TTLakesCondensed-Light.ttf);
 }
 
 
@@ -73,10 +73,7 @@ a:visited {
     height: 535px;
 }
 
-.header {
-    width: 1096px;
-    height: 130px;
-}
+
 
 .menu-h1 {
     margin-top: -45px;
@@ -101,6 +98,11 @@ a:visited {
     line-height: 40px;
     letter-spacing: -0.6px;
     color: var(--main-block);
+}
+
+.header {
+    width: 1096px;
+    height: 130px;
 }
 
 .header-actions--flex {
@@ -221,6 +223,10 @@ a:visited {
 
 .text__readmore {
     margin-left: 10px;
+}
+
+.text-read {
+    margin-top: 10px;
 }
 
 
