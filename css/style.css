@@ -56,7 +56,7 @@ a {
 }
 
 .menu_text h1 {
-    font-family: "TT Lakes-demi";
+    font-family: "TT Lakes-demi", sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
