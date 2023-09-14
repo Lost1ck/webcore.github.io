@@ -115,7 +115,7 @@ h1 {
     background-color: var(--main-background);
     padding: 20px;
     max-width: 1120px;
-    max-height: 535px;
+    min-height: 535px;
 }
 
 .menu_text {
@@ -199,6 +199,8 @@ h1 {
 .carousel {
     height: 82px;
     align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .carousel a {
@@ -225,7 +227,7 @@ h1 {
 }
 
 .main_img {
-    width: 531.35px;
+    width: 531.346px;
     height: 307px;
 }
 
@@ -269,6 +271,10 @@ h1 {
 .main_items > p:nth-child(2) > span {
     display: block;
 }
+
+/* .main {
+    min-height: 383.241px;
+} */
 
 .read-arrow {
     align-items: center;
@@ -438,8 +444,8 @@ h1 {
     .container {
         margin: 0;
         padding: 0;
-        min-width: 768px;
-        max-height: 416px;
+        max-width: 768px;
+        min-height: 416px;
     }
 
     .header {
@@ -452,7 +458,8 @@ h1 {
     }
     .main {
         padding-right: 20px;
-        max-height: 416px;
+        padding-top: 26px;
+        height: 416px;
     }
 
     .menu_text {
@@ -492,14 +499,14 @@ h1 {
 
     .main_img {
         padding: 0;
-        margin-top: 10px;
-        height: 176px;
+        width: 360px;
+        height: 259.655px;
     }    
 
     .img_side {
         padding: 0;
         width: 360px;
-        height: 208px;
+        height: 259.655px;
     }
 
     .actions_divided {
