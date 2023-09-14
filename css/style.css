@@ -114,8 +114,8 @@ h1 {
 .container {
     background-color: var(--main-background);
     padding: 20px;
-    width: 1120px;
-    height: 535px;
+    max-width: 1120px;
+    max-height: 535px;
 }
 
 .menu_text {
@@ -152,7 +152,7 @@ h1 {
 }
 
 .header {
-    width: 1096px;
+    /* max-width: 1096px; */
     height: 130px;
 }
 
@@ -322,10 +322,12 @@ h1 {
     .container {
         margin: 0;
         padding: 0;
-        width: 320px;
+        min-width: 320px;
+        max-height: 597px;
     }
 
     .header {
+        /* max-width: 320px; */
         width: 320px;
         height: 88px;
         background-color: var(--carousel-background);
@@ -363,6 +365,7 @@ h1 {
     }
 
     .main {
+        /* max-width: 320px; */
         display: block;
     }
 
@@ -435,19 +438,21 @@ h1 {
     .container {
         margin: 0;
         padding: 0;
-        width: 768px;
+        min-width: 768px;
+        max-height: 416px;
     }
 
     .header {
         margin: 0;
         padding: 10px;
-        width: 768px;
+        /* max-width: 768px; */
         height: 88px;
         background-color: var(--carousel-background);
         border-bottom: 0.5px solid var(--second-line);
     }
     .main {
         padding-right: 20px;
+        max-height: 416px;
     }
 
     .menu_text {
@@ -468,11 +473,13 @@ h1 {
     .carousel {
         overflow-x: scroll;
         margin-left: 20px;
-        height: 60px;
+        height: 40px;
     }
 
     .main_items {
         padding: 20px 20px;
+        width: 360px;
+        height: 259.655px;
     }
 
     .main_items > p:nth-child(2) > span {
