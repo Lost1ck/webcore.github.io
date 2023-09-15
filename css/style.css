@@ -120,7 +120,7 @@ h1 {
     left: -20px;
     width: 3px;
     height: 40px;
-    background-color: var(--carousel-text);
+    background-color: var( --second-line);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
