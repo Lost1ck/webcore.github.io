@@ -65,15 +65,6 @@ a {
     letter-spacing: -0.6px;
 }
 
-.carousel a {
-    font-family: "TT Lakes-light", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-}
-
 a:visited {
     color: var(--second-text);
 }
@@ -102,9 +93,6 @@ a:visited {
     display: none;
 }
 
-.carousel--flex {
-    display: flex;
-}
 
 h1 {
     font-size: 28px;
@@ -198,18 +186,26 @@ h1 {
 
 
 .carousel {
-    height: 82px;
     align-items: center;
-    overflow: hidden;
-    overflow-x: scroll;
+    width: 1063px;
+    height: 82px;
 }
 
 .carousel a {
+    font-family: "TT Lakes-light", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
+    margin-right: 5px;
+    margin: 0 5px;
+
+}
+
+.carousel--flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .carousel_item:hover {
@@ -330,6 +326,10 @@ h1 {
         max-height: 597px;
     }
 
+    .carousel--flex {
+        flex-wrap: nowrap;
+    }
+
     .header {
         max-width: 768px;
         min-width: 320px;
@@ -366,6 +366,8 @@ h1 {
         overflow: auto;
         margin-left: 20px;
         height: 40px;
+        overflow: hidden;
+        overflow-x: scroll;
     }
 
     .main {
@@ -413,6 +415,10 @@ h1 {
     .menu {
         margin-top: 0px;
     }    
+
+    .carousel--flex {
+        flex-wrap: nowrap;
+    }
 
     .nav--flex {
         display: block;
@@ -474,6 +480,7 @@ h1 {
     }
     
     .carousel {
+        overflow: hidden;
         overflow-x: scroll;
         margin-left: 20px;
         height: 40px;
