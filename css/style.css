@@ -44,6 +44,7 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .actions_img a {
@@ -119,6 +120,7 @@ h1 {
 }
 
 .menu_text {
+    display: inline-block;
     align-items: center;
     position: relative;
 }
@@ -247,7 +249,7 @@ h1 {
 }
 
 .menu {
-    margin-top: -120px;
+    margin-top: -130px;
 }
 
 .actions_divided {
@@ -293,7 +295,7 @@ h1 {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
     .actions_divided {
         display: block;
@@ -323,12 +325,14 @@ h1 {
     .container {
         margin: 0;
         padding: 0;
+        max-width: 768px;
         min-width: 320px;
         max-height: 597px;
     }
 
     .header {
-        width: 320px;
+        max-width: 768px;
+        min-width: 320px;
         height: 88px;
         background-color: var(--carousel-background);
         border-bottom: 0.5px solid var(--second-line);
@@ -396,7 +400,7 @@ h1 {
 
   }
   
-  @media (min-width: 321px) and (max-width: 768px) {
+  @media (min-width: 769px) and (max-width: 1120px) {
     
     .actions_divided .divided--inner:after {
         top: 5px;
@@ -437,8 +441,8 @@ h1 {
     .container {
         margin: 0;
         padding: 0;
-        min-width: 550px;
-        min-height: 416px;
+        max-width: 1120px;
+        min-height: 550px;
     }
 
     .header {
@@ -490,6 +494,8 @@ h1 {
 
     .main_img {
         padding: 0;
+        width: 360px;
+        height: 259.655px;
     }    
 
     .img_side {
