@@ -199,8 +199,6 @@ h1 {
     line-height: 24px;
     letter-spacing: -0.2px;
     margin-right: 5px;
-    margin: 0 5px;
-
 }
 
 .carousel--flex {
@@ -221,6 +219,12 @@ h1 {
     border-radius: 5px;
     padding: 5px 15px;
     white-space: nowrap;
+}
+
+
+.main {
+    min-width: 95%;
+    height: 535px;
 }
 
 .main_img {
@@ -368,6 +372,7 @@ h1 {
         height: 40px;
         overflow: hidden;
         overflow-x: scroll;
+        max-width: 95%;
     }
 
     .main {
@@ -459,13 +464,15 @@ h1 {
         border-bottom: 0.5px solid var(--second-line);
     }
     .main {
+        min-width: 720px;
+        height: 208px;
         padding: 20px;
         padding-top: 26px;
         min-height: 416px;
     }
 
     .menu_text {
-        margin: 10px 20px;
+        margin: 24px 20px;
         margin-right: 0;
     }
 
@@ -484,10 +491,10 @@ h1 {
         overflow-x: scroll;
         margin-left: 20px;
         height: 40px;
+        max-width: 95%;
     }
 
     .main_items {
-        width: 360px;
         min-height: 259.655px;
     }
 
